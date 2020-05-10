@@ -1,15 +1,16 @@
 import React from "react";
 import Layout from "src/components/Layout";
-import Nav from "src/components/Nav";
 // import Footer from "src/components/Footer";
 import { useTitle } from "react-use";
+import ApresentationSection from "src/Sections/Apresentation";
 
 const Home: React.FC = () => {
   useTitle("Craton | Home");
 
   return (
     <Layout>
-      <Nav />
+      <ApresentationSection/>
+      
       {/* <Footer /> */}
     </Layout>
   );

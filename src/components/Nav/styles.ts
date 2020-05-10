@@ -182,7 +182,7 @@ export const BurguerMenu = styled.img.attrs<{
 // `;
 
 export const StartButton = styled.button`
-  border: 1px solid ${props => props.theme.white};
+  border: 1.5px solid ${props => props.theme.white};
   background-color: transparent;
   color: white;
   padding: 1rem 2rem;

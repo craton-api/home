@@ -1,7 +1,7 @@
 import * as Scroll from "react-scroll";
 import styled from "src/lib/StyledComponents";
 
-const Column = styled(Scroll.Element)<{ center?: boolean }>`
+const Column = styled.div<{ center?: boolean }>`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
