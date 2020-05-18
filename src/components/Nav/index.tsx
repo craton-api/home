@@ -29,7 +29,7 @@ const Nav = () => {
     <>
       <Wrapper>
         <Container>
-          <MenuLink href="about">
+          <MenuLink href="/">
             <FilledLogo />
           </MenuLink>
           <MenuWrap>
