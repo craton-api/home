@@ -191,7 +191,7 @@ export const StartButton = styled.button`
   position: relative;
   transition: color 0.25s ease-in-out;
   cursor: pointer;
-  &:before{
+  &:before {
     z-index: -1;
     position: absolute;
     content: "";
@@ -203,10 +203,10 @@ export const StartButton = styled.button`
     transition: transform 0.2s ease-in-out;
     transform: translateX(-100%);
   }
-  
+
   &:hover {
     color: ${props => props.theme.primary};
-    &:before{
+    &:before {
       transform: translateX(0%);
     }
   }

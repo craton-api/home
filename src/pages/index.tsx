@@ -9,8 +9,7 @@ const Home: React.FC = () => {
 
   return (
     <Layout>
-      <ApresentationSection/>
-      
+      <ApresentationSection />
       {/* <Footer /> */}
     </Layout>
   );

@@ -1,4 +1,4 @@
-import * as Scroll from "react-scroll";
+// import * as Scroll from "react-scroll";
 import styled from "src/lib/StyledComponents";
 
 const Column = styled.div<{ center?: boolean }>`

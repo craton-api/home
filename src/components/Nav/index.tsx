@@ -45,7 +45,6 @@ const Nav = () => {
               <Link href="team">Team</Link>
               <Link href="support">Support</Link>
               <Link href="register">Start Now</Link>
-              
             </Menu>
           </MenuWrap>
           {isSmall ? (
@@ -62,9 +61,7 @@ const Nav = () => {
               <Link href="team">Team</Link>
               <Link href="support">Support</Link>
               <MenuLink href="register">
-                <StartButton>
-                  Start Now
-                </StartButton>
+                <StartButton>Start Now</StartButton>
               </MenuLink>
             </Links>
           )}

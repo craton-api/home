@@ -6,11 +6,11 @@ export const ApresentationImage = styled.img.attrs({
 })`
   width: 40%;
   max-width: 300rem;
-  margin: 1rem 2rem;
+  margin: 1rem 3rem;
   @media (max-width: 800px) {
     width: 90%;
     margin: 1rem auto;
-  } 
+  }
 `;
 
 export const Container = styled(Column)`
@@ -20,16 +20,16 @@ export const Container = styled(Column)`
   flex-wrap: wrap;
   @media (max-width: 800px) {
     flex-direction: column-reverse;
-  } 
+  }
 `;
 
 export const ApresentationInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 1rem 1rem;
+  margin: 1rem 3rem;
   @media (max-width: 800px) {
     margin: 1rem auto;
-  } 
+  }
 `;
 
 export const Button = styled.button`
@@ -40,6 +40,7 @@ export const Button = styled.button`
   margin: 1rem 0;
   padding: 1rem 4rem;
   width: fit-content;
+  cursor: pointer;
 `;
 
 export const BigText = styled.h1`
@@ -52,6 +53,6 @@ export const BigText = styled.h1`
 export const Description = styled.p`
   font-size: 2rem;
   margin: 0.5rem 0;
-  color: #DCDCDC;
+  color: #dcdcdc;
   color: ${props => props.theme.white};
 `;
