@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "src/components/Layout";
 // import Footer from "src/components/Footer";
 import { useTitle } from "react-use";
-import { Description, Title } from "./styles";
+import { Description, Title } from "src/styles/pricing";
 import Column from "src/components/Column";
 import PriceCard, { PriceCards } from "src/components/PriceCard";
 
