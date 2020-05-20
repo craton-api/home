@@ -7,9 +7,7 @@ import {
   Title,
   Link,
   Anchor,
-  Copyright,
-  PrimaryStroke,
-  SecondaryStroke
+  Copyright
 } from "./styles";
 
 const Footer = () => (
@@ -18,27 +16,51 @@ const Footer = () => (
       <DarkLogo />
       <Content>
         <Title>Seções</Title>
-        <Link to="about">Sobre</Link>
-        <Link to="projects">Projetos</Link>
-        <Link to="technologies">Tecnologias</Link>
-        <Link to="contact">Contato</Link>
+        <Link href="pricing">Pricing</Link>
+        <Link href="about">About</Link>
+        <Link href="docs">Docs</Link>
+        <Link href="team">Team</Link>
+        <Link href="support">Support</Link>
+        <Link href="register">Start Now</Link>
       </Content>
       <Content>
-        <Title>Redes Sociais</Title>
-        <Anchor target="_blank" href="https://github.com/danilexx">
-          Github
+        <Title>Documentation</Title>
+        <Anchor target="_blank" href="#">
+          Get Started
         </Anchor>
-        <Anchor
-          target="_blank"
-          href="https://www.linkedin.com/in/danilo-de-jesus-2a34b21a3/"
-        >
-          Linkedin
+        <Anchor target="_blank" href="#">
+          Products
+        </Anchor>
+        <Anchor target="_blank" href="#">
+          Payments
+        </Anchor>
+      </Content>
+      <Content>
+        <Title>Support</Title>
+        <Anchor target="_blank" href="#">
+          FAQ
+        </Anchor>
+        <Anchor target="_blank" href="#">
+          My Account
+        </Anchor>
+        <Anchor target="_blank" href="#">
+          About
+        </Anchor>
+      </Content>
+      <Content>
+        <Title>Social Media</Title>
+        <Anchor target="_blank" href="#">
+          Facebook
+        </Anchor>
+        <Anchor target="_blank" href="#">
+          Twitter
+        </Anchor>
+        <Anchor target="_blank" href="#">
+          Instagram
         </Anchor>
       </Content>
     </Row>
     <Copyright>Copyright - 2020</Copyright>
-    <PrimaryStroke />
-    <SecondaryStroke />
   </Container>
 );
 

@@ -2,6 +2,7 @@ import React from "react";
 import { createGlobalStyle, ThemeProvider } from "src/lib/StyledComponents";
 import { theme } from "src/theme";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -55,6 +56,7 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
     <GlobalStyle />
     <Nav />
     {children}
+    <Footer />
   </ThemeProvider>
 );
 
