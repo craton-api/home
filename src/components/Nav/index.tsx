@@ -39,12 +39,12 @@ const Nav = () => {
               isOpen={isMenuOpened}
               right
             >
-              <Link href="pricing">Pricing</Link>
-              <Link href="about">About</Link>
-              <Link href="docs">Docs</Link>
-              <Link href="team">Team</Link>
-              <Link href="support">Support</Link>
-              <Link href="register">Start Now</Link>
+              <Link href="/pricing">Pricing</Link>
+              <Link href="/about">About</Link>
+              <Link href="/docs">Docs</Link>
+              <Link href="/team">Team</Link>
+              <Link href="/support">Support</Link>
+              <Link href="/register">Start Now</Link>
             </Menu>
           </MenuWrap>
           {isSmall ? (
@@ -55,12 +55,12 @@ const Nav = () => {
             />
           ) : (
             <Links>
-              <Link href="pricing">Pricing</Link>
-              <Link href="about">About</Link>
-              <Link href="docs">Docs</Link>
-              <Link href="team">Team</Link>
-              <Link href="support">Support</Link>
-              <MenuLink href="register">
+              <Link href="/pricing">Pricing</Link>
+              <Link href="/about">About</Link>
+              <Link href="/docs">Docs</Link>
+              <Link href="/team">Team</Link>
+              <Link href="/support">Support</Link>
+              <MenuLink href="/register">
                 <StartButton>Start Now</StartButton>
               </MenuLink>
             </Links>

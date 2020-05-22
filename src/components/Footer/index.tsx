@@ -16,12 +16,12 @@ const Footer = () => (
       <DarkLogo />
       <Content>
         <Title>Seções</Title>
-        <Link href="pricing">Pricing</Link>
-        <Link href="about">About</Link>
-        <Link href="docs">Docs</Link>
-        <Link href="team">Team</Link>
-        <Link href="support">Support</Link>
-        <Link href="register">Start Now</Link>
+        <Link href="/pricing">Pricing</Link>
+        <Link href="/about">About</Link>
+        <Link href="/docs">Docs</Link>
+        <Link href="/team">Team</Link>
+        <Link href="/support">Support</Link>
+        <Link href="/register">Start Now</Link>
       </Content>
       <Content>
         <Title>Documentation</Title>
