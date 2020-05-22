@@ -58,7 +58,13 @@ const getDocsFromLocation = (path: string) => {
 };
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const isDocs = getDocsFromLocation(window.location.pathname);
+  const [isDocs, setIsDocs] = React.useState(false);
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const value = getDocsFromLocation(window.location.pathname);
+      setIsDocs(value);
+    }
+  }, []);
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
