@@ -1,6 +1,4 @@
 import React from "react";
-import Layout from "src/components/Layout";
-// import Footer from "src/components/Footer";
 import { useTitle } from "react-use";
 import { Description, Title } from "src/styles/pricing";
 import Column from "src/components/Column";
@@ -10,7 +8,7 @@ const Price: React.FC = () => {
   useTitle("Craton | Pricing");
 
   return (
-    <Layout>
+    <>
       <Column>
         <Title>Our Pricing</Title>
         <Description>
@@ -25,7 +23,7 @@ const Price: React.FC = () => {
           <PriceCard level="Enterprise" price={60} />
         </PriceCards>
       </Column>
-    </Layout>
+    </>
   );
 };
 

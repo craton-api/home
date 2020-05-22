@@ -1,8 +1,8 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "src/lib/StyledComponents";
 import { theme } from "src/theme";
-import Nav from "./Nav";
-import Footer from "./Footer";
+import Nav from "src/components/Nav";
+import Footer from "src/components/Footer";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -51,13 +51,22 @@ const GlobalStyle = createGlobalStyle`
   }
 
 `;
-const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <GlobalStyle />
-    <Nav />
-    {children}
-    <Footer />
-  </ThemeProvider>
-);
+const getDocsFromLocation = (path: string) => {
+  const paths = path.split("/");
+  if (paths[1] === "docs") return true;
+  return false;
+};
+
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const isDocs = getDocsFromLocation(window.location.pathname);
+  return (
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Nav />
+      {children}
+      {!isDocs && <Footer />}
+    </ThemeProvider>
+  );
+};
 
 export default Layout;

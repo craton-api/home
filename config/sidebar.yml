@@ -1,0 +1,73 @@
+# Sidebar navigation
+
+- label: 'Getting started'
+  link: '/'
+- label: 'Why Unform?'
+  link: '/why-unform'
+- label: 'FAQ'
+  link: '/faq'
+- label: Migration from 1.x
+  link: '/migration-guide'
+- label: 'Github'
+  link: 'https://github.com/Rocketseat/unform'
+- label: Guides
+  items:
+    - label: 'Basic form'
+      link: '/docs/guides/basic-form'
+    - label: 'React Native'
+      link: '/docs/guides/react-native'
+    - label: 'Initial data'
+      link: '/docs/guides/initial-data'
+    - label: 'Complex structures'
+      link: '/docs/guides/complex-structures'
+    - label: 'Validation'
+      link: '/docs/guides/validation'
+    - label: 'Get/set field value'
+      link: '/docs/guides/get-set-field-value'
+    - label: 'Get/set field error'
+      link: '/docs/guides/get-set-field-error'
+    - label: 'Reset form'
+      link: '/docs/guides/reset-form'
+    - label: 'Manual form submit'
+      link: '/docs/guides/manual-form-submit'
+
+- label: Playgrounds
+  items:
+    - label: 'ReactJS Live Demo'
+      link: 'https://codesandbox.io/embed/agitated-tdd-uf177?autoresize=1&expanddevtools=1&fontsize=14&hidenavigation=1&theme=dark'
+    - label: 'React Native Live Demo'
+      link: 'https://snack.expo.io/@diego3g/1e9fb3'
+
+- label: Recipes
+  items:
+    - label: 'Simple Input'
+      link: '/docs/recipes/simple-input'
+    - label: 'Creating your own inputs'
+      link: '/docs/recipes/creating-your-own-inputs'
+    - label: 'Accessing form ref'
+      link: '/docs/recipes/accessing-form-ref'
+    - label: 'Accessing field ref'
+      link: '/docs/recipes/accessing-field-ref'
+    - label: 'Styled Components'
+      link: '/docs/recipes/styled-components'
+    - label: 'Clear input error on focus'
+      link: '/docs/recipes/clear-input-error-on-focus'
+    - label: 'Accessing form event'
+      link: '/docs/recipes/accessing-form-event'
+    - label: 'TypeScript'
+      link: '/docs/recipes/typescript'
+
+- label: Examples
+  items:
+    - label: 'File input'
+      link: '/docs/examples/file-input'
+    - label: 'React Select'
+      link: '/docs/examples/react-select'
+    - label: 'React DatePicker'
+      link: '/docs/examples/react-datepicker'
+    - label: 'React Simple Code Editor'
+      link: '/docs/examples/react-simple-code-editor'
+    - label: 'React Input Mask'
+      link: '/docs/examples/react-input-mask'
+    - label: 'React Native Input Mask'
+      link: '/docs/examples/react-native-input-mask'

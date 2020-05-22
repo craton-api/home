@@ -1,5 +1,4 @@
 import React from "react";
-import Layout from "src/components/Layout";
 // import Footer from "src/components/Footer";
 import { useTitle } from "react-use";
 import { Description, Title } from "src/styles/pricing";
@@ -10,7 +9,7 @@ const Team: React.FC = () => {
   useTitle("Craton | Team");
 
   return (
-    <Layout>
+    <>
       <Column>
         <Title>About our Team</Title>
         <Description>
@@ -28,7 +27,7 @@ const Team: React.FC = () => {
           <TeamMateCard name="Leones" ocuppation="Backend Developer" />
         </TeamMateCards>
       </Column>
-    </Layout>
+    </>
   );
 };
 

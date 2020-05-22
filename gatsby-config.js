@@ -8,7 +8,30 @@ const path = require("path");
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    siteTitle: `Craton`,
+    defaultTitle: `Craton | Easy-Peasy ECommerces Management`,
+    siteTitleShort: `Craton`,
+    siteDescription: `Craton is a platform focused on creating ecommerces`,
+    siteUrl: `https://craton.netlify.app`,
+    siteAuthor: `@craton`,
+    siteImage: ``,
+    siteLanguage: `en`,
+    basePath: `/docs`,
+    themeColor: `#13C354`,
+    footer: ``
+  },
   plugins: [
+    `gatsby-plugin-layout`,
+    {
+      resolve: `@rocketseat/gatsby-theme-docs`,
+      options: {
+        docsPath: `src/docs`,
+        githubUrl: `https://github.com/@Craton/home`,
+        baseDir: `docs/`,
+        basePath: "/docs"
+      }
+    },
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-plugin-typescript",

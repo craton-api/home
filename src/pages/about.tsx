@@ -1,6 +1,4 @@
 import React from "react";
-import Layout from "src/components/Layout";
-// import Footer from "src/components/Footer";
 import { useTitle } from "react-use";
 import { Title, SubTitle } from "src/styles/about";
 import Column from "src/components/Column";
@@ -10,7 +8,7 @@ const About: React.FC = () => {
   useTitle("Craton | About");
 
   return (
-    <Layout>
+    <>
       <Column>
         <Title>About Craton</Title>
         <SubTitle>Overview</SubTitle>
@@ -21,7 +19,7 @@ const About: React.FC = () => {
         </AboutSection>
       </Column>
       {/* <Footer /> */}
-    </Layout>
+    </>
   );
 };
 
