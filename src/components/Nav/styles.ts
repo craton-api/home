@@ -34,6 +34,9 @@ export const Links = styled.ul`
   list-style: none;
   margin-left: auto;
   flex-wrap: wrap;
+  color: white;
+  padding-left: 0;
+  margin-bottom: 0;
 `;
 
 export const MenuLink = styled.a`
