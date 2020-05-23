@@ -68,7 +68,7 @@ export default function CodeHighlight({
           {...defaultProps}
           code={codeString}
           language={language}
-          theme={theme}
+          // theme={theme}
         >
           {({
             className: blockClassName,
@@ -77,7 +77,15 @@ export default function CodeHighlight({
             getLineProps,
             getTokenProps
           }) => (
-            <Pre className={blockClassName} style={style} hasTitle={title}>
+            <Pre
+              className={blockClassName}
+              style={{
+                ...style,
+                backgroundColor: "rgba(0,0,0,0.3)",
+                color: "white"
+              }}
+              hasTitle={title}
+            >
               <CopyCode onClick={handleClick}>
                 {copied ? "Copied!" : "Copy"}
               </CopyCode>
@@ -86,7 +94,11 @@ export default function CodeHighlight({
                   <div key={i} {...getLineProps({ line, key: i })}>
                     {lineNumbers && <LineNo>{i + 1}</LineNo>}
                     {line.map((token, key) => (
-                      <span key={key} {...getTokenProps({ token, key })} />
+                      <span
+                        {...getTokenProps({ token, key })}
+                        style={{ color: "white" }}
+                        key={key}
+                      />
                     ))}
                   </div>
                 ))}

@@ -3,6 +3,8 @@ import { Global, css } from "@emotion/core";
 import { useTheme } from "emotion-theming";
 import { lighten } from "polished";
 
+const codeBgColor = "rgba(0,0,0,0.5)";
+
 export default function GlobalStyle() {
   const theme = useTheme();
 
@@ -52,13 +54,13 @@ export default function GlobalStyle() {
         h4,
         h5,
         h6 {
-          color: #C5C5C5;
+          color: white;
           margin: 24px 0 16px 0;
           font-weight: normal;
         }
 
         p {
-          color: #C5C5C5;
+          color: rgba(255,255,255,0.8);
           font-size: 16px;
           line-height: 28px;
           margin-bottom: 16px;
@@ -70,7 +72,7 @@ export default function GlobalStyle() {
           vertical-align: middle;
           line-height: 1;
           padding: 0.2em 0.2em 0.3em 0.2em;
-          background-color: #444444;
+          background-color: ${codeBgColor};
           color: rgba(248, 248, 242);
           font-size: 14px;
           border-radius: 3px;
@@ -82,7 +84,7 @@ export default function GlobalStyle() {
         a {
           color: white;
           font-weight: bold;
-
+          letter-spacing: 0.1rem;
           &:hover {
             color: ${theme.colors.primary};
             transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
@@ -139,7 +141,7 @@ export default function GlobalStyle() {
 
         ul,
         ol {
-          color: #737380;
+          color: white;
           padding-left: 15px;
           margin-bottom: 16px;
 
@@ -157,7 +159,7 @@ export default function GlobalStyle() {
         }
 
         pre[class*='language-']::before {
-          background: #d9d7e0;
+          background: ${codeBgColor};
           border-radius: 0 0 4px 4px;
           color: #232129;
           font-size: 12px;
@@ -179,95 +181,106 @@ export default function GlobalStyle() {
           font-variant: no-common-ligatures no-discretionary-ligatures
             no-historical-ligatures no-contextual;
         }
+ 
 
         pre[class~='language-js']::before,
         pre[class~='language-javascript']::before {
           content: 'js';
-          background: #f7df1e;
+          background: ${codeBgColor};
         }
 
         pre[class~='language-jsx']::before {
           content: 'jsx';
-          background: #61dafb;
+          background: ${codeBgColor};
+          color: #fff;
         }
 
         pre[class~='language-typescript']::before,
         pre[class~='language-ts']::before {
           content: 'ts';
-          background: #294e80;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-tsx']::before {
           content: 'tsx';
-          background: #294e80;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-graphql']::before {
           content: 'GraphQL';
-          background: #e10098;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-html']::before {
           content: 'html';
-          background: #005a9c;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-css']::before {
           content: 'css';
-          background: #ff9800;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-mdx']::before {
           content: 'mdx';
-          background: #f9ac00;
+          background: ${codeBgColor};
           color: #fff;
         }
 
         pre[class~='language-shell']::before {
           content: 'shell';
+          color: #fff;
         }
 
         pre[class~='language-sh']::before {
           content: 'sh';
+          color: #fff;
         }
 
         pre[class~='language-bash']::before {
           content: 'bash';
+          color: #fff;
         }
 
         pre[class~='language-yaml']::before {
           content: 'yaml';
-          background: #ffa8df;
+          background: ${codeBgColor};
+          color: #fff;
         }
 
         pre[class~='language-markdown']::before {
           content: 'md';
+          color: #fff;
         }
 
         pre[class~='language-json']::before,
         pre[class~='language-json5']::before {
           content: 'json';
-          background: linen;
+          background: ${codeBgColor};
+          color: #fff;
         }
 
         pre[class~='language-diff']::before {
           content: 'diff';
-          background: #e6ffed;
+          background: ${codeBgColor};
+          color: #fff;
         }
 
         pre[class~='language-text']::before {
           content: 'text';
-          background: #fff;
+          background: ${codeBgColor};
+          color: #fff;
         }
 
         pre[class~='language-flow']::before {
           content: 'flow';
-          background: #e8bd36;
+          background: ${codeBgColor};
+          color: #fff;
         }
       `}
     />

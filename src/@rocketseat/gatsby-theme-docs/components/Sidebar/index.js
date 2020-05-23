@@ -5,15 +5,14 @@ import { useSidebar } from "@rocketseat/gatsby-theme-docs-core";
 
 import {
   Container,
-  LogoContainer,
   List,
   Heading,
   Item,
   SubItem
 } from "@rocketseat/gatsby-theme-docs/src/components/Sidebar/styles";
 import { isExternalUrl } from "@rocketseat/gatsby-theme-docs/src/util/url";
-import ExternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar//ExternalLink";
-import InternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar//InternalLink";
+import ExternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar/ExternalLink";
+import InternalLink from "@rocketseat/gatsby-theme-docs/src/components/Sidebar/InternalLink";
 
 function ListWithSubItems({ children, text }) {
   return (
@@ -54,14 +53,14 @@ export default function Sidebar({ isMenuOpen }) {
     <Container isMenuOpen={isMenuOpen}>
       <nav>
         <List>
-          <Item style={{ marginTop: "1rem" }}>
+          <Item style={{ marginTop: "1rem", letterSpacing: "0.02rem" }}>
             <InternalLink link={basePath} label="Home" />
           </Item>
           {data.map(({ node: { label, link, items, id } }) => {
             if (Array.isArray(items)) {
               const subitems = items.map(item => {
                 return (
-                  <Item key={item.link}>
+                  <Item key={item.link} style={{ letterSpacing: "0.02rem" }}>
                     {renderLink(item.link, item.label)}
                   </Item>
                 );
