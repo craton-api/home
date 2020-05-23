@@ -51,6 +51,26 @@ const GlobalStyle = createGlobalStyle`
     font-size: 1.4rem;
   }
 
+  ::-webkit-scrollbar {
+    width: 1rem;
+    border-radius: 5px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
 `;
 const getDocsFromLocation = (path: string | undefined) => {
   if (typeof path !== "string") {
