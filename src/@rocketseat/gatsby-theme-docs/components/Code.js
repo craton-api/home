@@ -11,7 +11,6 @@ import {
   CopyCode,
   LineNo,
   Pre,
-  PreHeader,
   LiveWrapper,
   LivePreview,
   LiveError,
@@ -20,6 +19,7 @@ import {
 import { copyToClipboard } from "@rocketseat/gatsby-theme-docs/src/util/copy-to-clipboard";
 import { FormContext, Scope, useField } from "@unform/core";
 import { Form } from "@unform/web";
+import { PreHeader } from "../styles/custom";
 
 const scope = { mdx, Form, FormContext, Scope, useField };
 
@@ -68,7 +68,7 @@ export default function CodeHighlight({
           {...defaultProps}
           code={codeString}
           language={language}
-          // theme={theme}
+          theme={theme}
         >
           {({
             className: blockClassName,
@@ -81,8 +81,10 @@ export default function CodeHighlight({
               className={blockClassName}
               style={{
                 ...style,
-                backgroundColor: "rgba(0,0,0,0.3)",
-                color: "white"
+                margin: "0.5rem 0",
+                backgroundColor: "rgba(0, 0, 0, 0.2)"
+                // backgroundColor: "rgba(0,0,0,0.3)",
+                // color: "white"
               }}
               hasTitle={title}
             >
@@ -94,11 +96,7 @@ export default function CodeHighlight({
                   <div key={i} {...getLineProps({ line, key: i })}>
                     {lineNumbers && <LineNo>{i + 1}</LineNo>}
                     {line.map((token, key) => (
-                      <span
-                        {...getTokenProps({ token, key })}
-                        style={{ color: "white" }}
-                        key={key}
-                      />
+                      <span {...getTokenProps({ token, key })} key={key} />
                     ))}
                   </div>
                 ))}

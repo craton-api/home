@@ -11,6 +11,12 @@ export default function GlobalStyle() {
   return (
     <Global
       styles={css`
+        div.token-line {
+          margin: 0.5rem 0;
+        }
+        blockquote p{
+          background: rgba(0, 0, 0, 0.2) !important;
+        }
         *,
         *::after,
         *::before {
