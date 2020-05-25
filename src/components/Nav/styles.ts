@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
   width: 100%;
   background-color: ${props => props.theme.primary};
   z-index: 25;
-  /* height: 10vh; */
+  height: 10vh;
 `;
 
 export const Links = styled.ul`

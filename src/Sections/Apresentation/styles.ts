@@ -1,5 +1,4 @@
 import styled from "src/lib/StyledComponents";
-import Column from "src/components/Column";
 
 export const ApresentationImage = styled.img.attrs({
   src: "/images/apresentation.svg"
@@ -13,7 +12,7 @@ export const ApresentationImage = styled.img.attrs({
   }
 `;
 
-export const Container = styled(Column)`
+export const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
